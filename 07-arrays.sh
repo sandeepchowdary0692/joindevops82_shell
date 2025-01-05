@@ -11,3 +11,5 @@ echo "Second movie:${MOVIES[1]}"
 echo "Thried movie:${MOVIES[2]}"
 
 echo "All movie: ${MOVIES[@]}"
+
+## use this link https://www.tutorialspoint.com/unix/unix-using-arrays.htm  
