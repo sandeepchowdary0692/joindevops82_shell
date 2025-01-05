@@ -10,14 +10,3 @@ else
     echo "given number less then or equal 100" 
 fi
 
-
-
-
-
-#a=5
-#b=15
-
-#if [$a -lt $b]
-#then
- #  echo "a is less then b"
-#if
