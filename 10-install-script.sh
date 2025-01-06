@@ -34,14 +34,13 @@ if [ $? -ne 0 ]
 then  
     dnf install git -y
     if [ $? -ne 0 ]
-    then 
-        echo "Installing Git ... FAILURE"
-        exit 1
-    else
-        echo   "Installing Git ... SUCCESS"
+        then
+            echo "Installing Git ... FAILURE"
+            exit 1
+        else
+             echo   "Installing Git ... SUCCESS"
     if
+
 else
-     echo "Git Already .... INSTALLED"
+        echo "Git Already .... INSTALLED"
 fi
-        
-            
