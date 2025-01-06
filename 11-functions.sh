@@ -18,14 +18,14 @@ then
     exit 1 #other then 0
 fi
 
-dnf list installed mysql
+dnf list installed mariadb105
 
 if [ $? -ne 0 ]
 then #not installed
-    dnf install mysql -y
-    VALIDATE $? "Installing MYSQL"
+    dnf install mariadb105 -y
+    VALIDATE $? "Installing mariadb105"
 else
-    echo "MYSQL is already .....INSTALLED"
+    echo "Mariadb105 is already .....INSTALLED"
 fi
 
 dnf list installed Git
