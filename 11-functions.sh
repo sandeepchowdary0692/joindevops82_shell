@@ -9,8 +9,8 @@ VALIDATE(){
         exit 1
     else
         echo "$2....SUCCESS"
-    if
-}; then
+    fi
+}
 
 if [ $USERID -ne 0 ]
 then 
