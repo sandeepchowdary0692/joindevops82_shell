@@ -8,13 +8,13 @@ then
     exit 1 #other than 0
 fi
 
-dnf list installed mysql
+dnf list installed mariadb105
 
 if [ $? -ne 0 ]
 
 then #if not installed
     
-dnf installed mysql -y
+dnf install mariadb105 -y
     if [ $? -ne 0 ]
         then
             echo "installing mariadb105 ......FAILUER"
