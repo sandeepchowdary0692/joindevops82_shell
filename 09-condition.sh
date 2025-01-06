@@ -1,12 +1,12 @@
-$!/bin/bash
+#!/bin/bash
 
 NUMBER=$1
 
-# -gt (Greater-than), -lt (Less-than), -eq (equal), -ge (greater than equal), -le (Less than equal)
+# -gt, -lt, -eq, -ge, -le
 
 if [ $NUMBER -gt 100 ]
 then
-    echo "given number is greter then 100"
+    echo "Given number is greater than 100"
 else
-    echo "given number less then or equal to 100" 
+    echo "Given number is less than or equal to 100"
 fi
