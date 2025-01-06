@@ -10,6 +10,8 @@ fi
 
 dnf list installed mariadb105
 
+#mysql is not work in amazon we can use mariadb105 : https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/mysql-install-cli.html
+
 if [ $? -ne 0 ]
 
 then #if not installed
