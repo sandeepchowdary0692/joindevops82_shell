@@ -17,13 +17,13 @@ then #if not installed
 dnf installed mysql -y
     if [ $? -ne 0 ]
         then
-            echo "installing MYSQL ......FAILUER"
+            echo "installing mariadb105 ......FAILUER"
         else
-            echo "installing MYSQL ......SUCCESS"
+            echo "installing mariadb105 ......SUCCESS"
     fi
 
 else
-    echo "MYSQL is Already ......INSTALLED"
+    echo "mariadb105 is Already ......INSTALLED"
 fi
 
 #Installing the Git
