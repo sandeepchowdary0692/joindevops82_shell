@@ -39,7 +39,7 @@ then
             exit 1
         else
              echo   "Installing Git ... SUCCESS"
-    if
+    fi
 
 else
         echo "Git Already .... INSTALLED"
