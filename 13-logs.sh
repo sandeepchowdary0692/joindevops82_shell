@@ -45,7 +45,7 @@ dnf list installed Git &>>LOG_FILE_NAME
 
 if [ $? -ne 0 ]
 then #not installed
-    dnf install git -y >>$LOG_FILE_NAME
+    dnf install git -y
     VALIDATE $? "Installing Git"
 else
     echo "Git is already .....$Y INSTALLED $N"
