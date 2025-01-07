@@ -29,6 +29,7 @@ then
     echo "ERROR::you must sudo access to excute this script"
     exit 1 #other then 0
 fi
+
 for package in $@
 do 
     dnf installed $package &>>$LOG_FILE_NAME
