@@ -34,10 +34,10 @@ for package in $@
 do 
     dnf installed $package &>>$LOG_FILE_NAME
     if [ $? -ne 0 ]
-then
-    dnf installed $package - y &>>$LOG_FILE_NAME
-    VALIDATE $? "installing $package"
-else
-    echo -e "$package is already $Y ... INSTALLED $N"
-fi
+        then
+            dnf install $package - y &>>$LOG_FILE_NAME
+            VALIDATE $? "installing $package"
+        else
+            echo -e "$package is already $Y ... INSTALLED $N"
+        fi
 done
