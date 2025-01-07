@@ -35,7 +35,7 @@ dnf list installed mariadb105 &>>LOG_FILE_NAME
 
 if [ $? -ne 0 ]
 then #not installed
-    dnf install mariadb105 -y
+    dnf install mariadb105 -y &>>LOG_FILE_NAME
     VALIDATE $? "Installing mariadb105"
 else
     echo -e "Mariadb105 is already ..... $Y INSTALLED $N"
@@ -45,7 +45,7 @@ dnf list installed Git &>>LOG_FILE_NAME
 
 if [ $? -ne 0 ]
 then #not installed
-    dnf install git -y
+    dnf install git -y &>>LOG_FILE_NAME
     VALIDATE $? "Installing Git"
 else
     echo "Git is already .....$Y INSTALLED $N"
